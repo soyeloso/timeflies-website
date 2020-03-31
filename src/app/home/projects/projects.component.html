@@ -1,0 +1,15 @@
+<div *ngIf="projectsList.length > 0">
+  <h1>On-going projects</h1>
+  <app-project-bloc *ngFor="let project of projectsList" [project]="project">
+  </app-project-bloc>
+</div>
+
+<div *ngIf="archivedList.length > 0">
+  <h1>Archived</h1>
+  <app-project-bloc *ngFor="let project of archivedList" [project]="project">
+  </app-project-bloc>
+</div>
+
+<div *ngIf="projectsList.length === 0 && archivedList.length === 0" class="placeholder">
+  Create your first project to start !
+</div>

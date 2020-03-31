@@ -1,0 +1,12 @@
+@import 'variables';
+$nav-height: 60px;
+
+.nav-bar {
+  height: $nav-height;
+}
+
+.main-content {
+  padding: 1rem;
+  width: 100%;
+  height: calc(100vh - #{$nav-height});
+}

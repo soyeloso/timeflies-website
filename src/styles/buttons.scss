@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+
+  &:visited,
+  &:active {
+    color: inherit;
+  }
+}
+
+.btn-icon {
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: #eeeeee;
+  box-shadow: 6px 6px 12px #cacaca,
+    -6px -6px 12px #ffffff;
+
+  i {
+    font-size: 2rem;
+  }
+}

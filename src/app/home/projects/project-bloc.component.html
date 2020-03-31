@@ -1,0 +1,10 @@
+<a class="bloc" (click)="onGoToProjectView()">
+  <h2>{{ project.name }}</h2>
+</a>
+
+<button class="btn-icon" *ngIf="!isRunning" (click)="startTimer()">
+  <i class="fas fa-clock"></i>
+</button>
+<button class="btn-icon" *ngIf="isRunning" (click)="stopTimer()">
+  STOP
+</button>

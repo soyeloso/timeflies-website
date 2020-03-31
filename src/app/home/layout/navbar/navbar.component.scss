@@ -1,0 +1,28 @@
+@import 'variables';
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  .logo {
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    color: $color-primary;
+  }
+
+  ul.right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: $dark-grey;
+
+    li {
+      margin-left: 1rem;
+    }
+  }
+
+}
