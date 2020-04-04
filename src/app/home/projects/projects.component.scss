@@ -1,0 +1,16 @@
+@import 'variables';
+
+.list {
+  border-radius: 6px;
+  background: white;
+  border: 1px solid #eee;
+
+  .list-item {
+    display: block;
+    border-bottom: 1px solid $light-grey;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

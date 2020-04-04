@@ -1,10 +1,20 @@
-<a class="bloc" (click)="onGoToProjectView()">
-  <h2>{{ project.name }}</h2>
-</a>
+<div class="bloc">
+  <div class="infos">
+    <h3>{{ project.name }}</h3>
+    <span>{{ project.totalDuration * 1000 | date:'H:mm:ss':'UTC'}}</span>
+    <span> | last modified : {{ project.lastModified | date }}</span>
+  </div>
 
-<button class="btn-icon" *ngIf="!isRunning" (click)="startTimer()">
-  <i class="fas fa-clock"></i>
-</button>
-<button class="btn-icon" *ngIf="isRunning" (click)="stopTimer()">
-  STOP
-</button>
+  <div class="actions">
+    <a class="btn-icon-flat" (click)="onGoToProjectView()">
+      <i class="fas fa-arrow-right"></i>
+    </a>
+
+    <button class="btn-icon" *ngIf="!isRunning" (click)="startTimer()">
+      <i class="far fa-clock"></i>
+    </button>
+    <button class="btn-icon" *ngIf="isRunning" (click)="stopTimer()">
+      <i class="far fa-stop-cirle"></i>
+    </button>
+  </div>
+</div>

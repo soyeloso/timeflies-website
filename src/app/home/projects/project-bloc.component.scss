@@ -1,12 +1,20 @@
 @import 'variables';
 
 .bloc {
-  display: inline-block;
-  background-color: $color-primary;
-  width: 500px;
-  height: 60px;
-  border-radius: 50px;
-  background: #eeeeee;
-  box-shadow: 6px 6px 12px #cacaca,
-    -6px -6px 12px #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  .infos {
+    flex: 1;
+  }
+
+  .actions {
+    .btn-icon {
+      margin-left: 2rem;
+    }
+  }
+
+
+
 }

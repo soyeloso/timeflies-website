@@ -8,6 +8,7 @@ a {
 }
 
 .btn-icon {
+  cursor: pointer;
   border: none;
   width: 60px;
   height: 60px;
@@ -15,6 +16,16 @@ a {
   background: #eeeeee;
   box-shadow: 6px 6px 12px #cacaca,
     -6px -6px 12px #ffffff;
+
+  i {
+    font-size: 2rem;
+  }
+}
+
+.btn-icon-flat {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
 
   i {
     font-size: 2rem;

@@ -13,6 +13,7 @@ import { ProjectBlocComponent } from './projects/project-bloc.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AccountComponent } from './account/account.component';
 import { SearchComponent } from './search/search.component';
+import { DashboardComponent } from './layout/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SearchComponent } from './search/search.component';
     NavbarComponent,
     ProjectBlocComponent,
     AccountComponent,
-    SearchComponent
+    SearchComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,
